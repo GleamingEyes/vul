@@ -16,11 +16,11 @@ Tenda AC9 V3.0 BR_V15.03.06.42_multi_TD01 was discovered to contain a stack over
 
 1. In function formSetQosBand line 9, 'list' is a a user-controlled parameter(‘list’) and is read in without length check,  which is passed into funcition setQosMiblist later.
    
-   ![](./images/2_1.png)
+   ![](./images/4_1.png)
 
 2. In function setQosMiblist, the content of 'list' is  copied into local variable 'qos_str', which leads to a stack overflow vulnerability.
    
-   ![](./images/2_2.png)
+   ![](./images/4_2.png)
 
 ## POC
 

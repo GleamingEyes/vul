@@ -139,11 +139,11 @@ LABEL_20:
 
 2. in function 'fromSetSysTime' line 39, 'timezone' is a a user-controlled parameter("timeZone") and is read in without length check.
 
-![](/images/2_1.png)
+![](./images/2_1.png)
 
 3. Then content of 'firewall_value' is copied into local variable 'timezone_buf', which leads to a stack overflow vulnerability.
 
-![](/images/2_2.png)
+![](./images/2_2.png)
 
 ## POC
 

@@ -127,11 +127,11 @@ LABEL_10:
 
 2. in function  'fromSetIpMacBind' line 34, 'static_list' is a  user-controlled parameter("list") and is read in without length check.
 
-![](C:\Users\tian\AppData\Roaming\marktext\images\2023-07-19-16-32-12-image.png)
+![](./images/3_1.png)
 
 Then  content of 'static_list' is copied into local variable 'mib_buf', which leads to a stack overflow vulnerability.
 
-![](C:\Users\tian\AppData\Roaming\marktext\images\2023-07-19-16-34-47-image.png)
+![](./images/3_2.png)
 
 ## POC
 

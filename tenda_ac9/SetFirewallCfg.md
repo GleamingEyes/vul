@@ -196,7 +196,7 @@ void __cdecl formSetFirewallCfg(webs_t wp, char_t *path, char_t *query)
 
 2. in function 'formSetFirwallCfg' line 52, 'firewall_value' is a a user-controlled parameter("firewallEn") and is read in without length check.
 
-![](/images/1_1.png)
+![](./images/1_1.png)
 
 3. Then content of 'firewall_value' is copied into local variable 'firewall_buf', which leads to a stack overflow vulnerability.
 

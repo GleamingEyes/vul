@@ -198,7 +198,7 @@ void __cdecl formSetFirewallCfg(webs_t wp, char_t *path, char_t *query)
 
 ![](/images/1_1.png)
 
-Then content of 'firewall_value' is copied into local variable 'firewall_buf', which leads to a stack overflow vulnerability.
+3. Then content of 'firewall_value' is copied into local variable 'firewall_buf', which leads to a stack overflow vulnerability.
 
 ![](/images/1_2.png)
 
